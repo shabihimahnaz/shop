@@ -11,6 +11,16 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
+});*/
+
+Route::get('/', function () {
+    dd(app('Illuminate\Contracts\Config\Repository'));
+//    dd(\Illuminate\Support\Facades\Config::get('database.default'));
 });
+
+Route::get('/test','TestController@test');
+
+Route:
+
